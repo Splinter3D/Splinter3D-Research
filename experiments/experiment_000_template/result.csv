@@ -1,0 +1,7 @@
+model,run,vertices,faces,execution_time_s,memory_mb
+model_A,1,10000,20000,1.25,128
+model_A,2,10000,20000,1.21,130
+model_A,3,10000,20000,1.28,129
+model_B,1,100000,200000,8.42,512
+model_B,2,100000,200000,8.37,508
+model_B,3,100000,200000,8.51,515

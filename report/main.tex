@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{article}
+
+% ==========================================
+% Packages
+% ==========================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cite}
+
+% ==========================================
+% Document Information
+% ==========================================
+
+\title{Splinter3D Research Report}
+\author{
+    Raphaël PÉTREQUIN \\
+    \texttt{r.petrequin0@gmail.com}
+    \and
+    Jane Doe \\
+    \texttt{jane@example.com}
+}
+\date{\today}
+
+% ==========================================
+% Document
+% ==========================================
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \small
+    This report is licensed under the
+    \href{https://creativecommons.org/licenses/by/4.0/}
+    {Creative Commons Attribution 4.0 International License (CC BY 4.0)}.
+\end{center}
+
+\tableofcontents
+
+\newpage
+
+% ==========================================
+% Report Sections
+% ==========================================
+
+\input{sections/introduction}
+\input{sections/problem_definition}
+\input{sections/state_of_the_art}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+% ==========================================
+% Bibliography
+% ==========================================
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
