@@ -1,0 +1,10 @@
+shape,shape_type,vertices,centroid_triangles,delaunay_triangles,centroid_outside,smart_us,brute_us,speedup,method,runs
+Circle,convex,13,13,11,0,5.871,38.265,6.5176,"Centroid fan",1000
+Rectangle,convex,4,4,2,0,3.063,18.593,6.0702,"Centroid fan",1000
+Arrow,concave,8,8,6,0,39.410,22.396,0.56828,"Constrained Delaunay",1000
+C-shape,concave,8,8,6,3,38.289,22.364,0.58408,"Constrained Delaunay",1000
+L-shape,concave,6,6,4,1,37.820,20.254,0.53554,"Constrained Delaunay",1000
+T-shape,concave,8,8,6,2,37.672,22.250,0.59062,"Constrained Delaunay",1000
+Lightning bolt,concave,8,8,6,0,39.926,23.755,0.59498,"Constrained Delaunay",1000
+Circle,convex,100,100,98,0,9.198,408.050,44.363,"Centroid fan",1000
+Gear,concave,100,100,98,0,388.080,347.150,0.89452,"Constrained Delaunay",1000
