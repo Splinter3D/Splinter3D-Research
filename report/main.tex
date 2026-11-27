@@ -6,11 +6,17 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{hyperref}
-\usepackage{cite}
+
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+\graphicspath{{figures/}}
 
 % ==========================================
 % Document Information
@@ -41,6 +47,18 @@
     {Creative Commons Attribution 4.0 International License (CC BY 4.0)}.
 \end{center}
 
+% ==========================================
+% Abstract
+% ==========================================
+
+\begin{abstract}
+    \input{sections/abstract}
+\end{abstract}
+
+% ==========================================
+% Table of Contents
+% ==========================================
+
 \tableofcontents
 
 \newpage
@@ -61,7 +79,6 @@
 % Bibliography
 % ==========================================
 
-\bibliographystyle{plain}
-\bibliography{references}
+\printbibliography
 
 \end{document}
