@@ -12,6 +12,7 @@ Its purpose is to maintain a structured and reproducible record of the research 
 ├── experiments/
 ├── notebook/
 ├── report/
+├── scripts/
 │
 └── README.md
 ```
@@ -116,7 +117,34 @@ report/
 
 ### Documentation
 
-See [`report/README.md`](report/README.md) for LaTeX conventions, bibliography management, figure organization and compilation instructions.
+See [`report/README.md`](report/README.md) for LaTeX conventions, bibliography management and figure organization. To compile the report, see [`scripts/README.md`](scripts/README.md).
+
+---
+
+## 4. `scripts/` - Utility Scripts
+
+**Purpose:** Provide the tools used to build and maintain the repository.
+
+Currently, it contains `compile_to_pdf.py`, which compiles the scientific report from `report/` into a PDF. All generated files are written to `build/`: the final PDF in `build/report/`, and the intermediate files (kept for faster rebuilds) in `build/intermediate/`:
+
+```text
+build/
+├── report/
+│   └── main.pdf
+└── intermediate/
+```
+
+Quick usage (from the repository root):
+
+```bash
+python scripts/compile_to_pdf.py
+```
+
+A LaTeX distribution (TeX Live, or MacTeX on macOS) is required. **Beware: the TeX Live installer does not handle special characters (accents, spaces) in paths well.**
+
+### Documentation
+
+See [`scripts/README.md`](scripts/README.md) for the full usage of the scripts, the installation of TeX Live / MacTeX and troubleshooting.
 
 ---
 
@@ -128,7 +156,8 @@ The repository follows a continuous research and documentation workflow:
 2. **Experiment:** Create a dedicated directory in `experiments/` for each experimental study.
 3. **Analyze:** Process experimental results, generate visualizations and document observations.
 4. **Document:** Integrate validated findings into the corresponding sections of `report/`.
-5. **Refine:** Update the report as the research progresses.
+5. **Build:** Compile the report with `scripts/compile_to_pdf.py` to check that it builds and to get the PDF in `build/report/`.
+6. **Refine:** Update the report as the research progresses.
 
 The research notebook and experiment records preserve the history of the work, while the scientific report presents the consolidated findings.
 

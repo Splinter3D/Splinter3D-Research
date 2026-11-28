@@ -183,52 +183,19 @@ Figures generated during experiments can be reused here when they are relevant t
 
 ## 5. Compilation and Generated Files
 
-**Purpose:** Compile the LaTeX source files into a readable PDF document.
+The report is compiled with the build script located in `scripts/`:
 
-The main output of the report is:
+```bash
+python scripts/compile_to_pdf.py
+```
+
+The final PDF is generated in:
 
 ```text
-report.pdf
+build/report/main.pdf
 ```
 
-### Recommended compilation
-
-For a project using BibTeX, the traditional compilation sequence is:
-
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-Alternatively, a LaTeX distribution with `latexmk` can automate the compilation process:
-
-```bash
-latexmk -pdf main.tex
-```
-
-**! for now I didn't think that much about the compilation process, but I will do it later.!**
-
-### Generated files
-
-LaTeX generates intermediate files during compilation.
-
-Examples:
-
-| Extension | Description |
-|---|---|
-| `.aux` | Auxiliary information used during compilation. |
-| `.bbl` | Generated bibliography. |
-| `.blg` | Bibliography compilation log. |
-| `.log` | Compilation log. |
-| `.out` | Hyperlink and document metadata. |
-| `.toc` | Table of contents information. |
-| `.fls`, `.fdb_latexmk` | Compilation dependency information. |
-
-These files are generated automatically and should generally not be maintained manually.
-
-Only the source files and the final PDF should normally be kept in version control.
+The script requires a LaTeX distribution (TeX Live, or MacTeX on macOS) with `latexmk` and `biber`. See [`scripts/README.md`](../scripts/README.md) for the installation instructions, all available options and other details.
 
 ---
 
