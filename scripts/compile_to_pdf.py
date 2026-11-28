@@ -57,14 +57,14 @@ PDF_FILE = BUILD_REPORT_DIR / (MAIN_FILE.stem + ".pdf")
 REQUIRED_FILES = [
     MAIN_FILE,
     BIB_FILE,
-    REPORT_DIR / "sections/abstract.tex",
-    REPORT_DIR / "sections/introduction.tex",
-    REPORT_DIR / "sections/problem_definition.tex",
-    REPORT_DIR / "sections/state_of_the_art.tex",
-    REPORT_DIR / "sections/methodology.tex",
-    REPORT_DIR / "sections/results.tex",
-    REPORT_DIR / "sections/discussion.tex",
-    REPORT_DIR / "sections/conclusion.tex",
+    REPORT_DIR / "sections/0_abstract.tex",
+    REPORT_DIR / "sections/1_introduction.tex",
+    REPORT_DIR / "sections/2_problem_definition.tex",
+    REPORT_DIR / "sections/3_state_of_the_art.tex",
+    REPORT_DIR / "sections/4_methodology.tex",
+    REPORT_DIR / "sections/5_results.tex",
+    REPORT_DIR / "sections/6_discussion.tex",
+    REPORT_DIR / "sections/7_conclusion.tex",
 ]
 
 REQUIRED_DIRECTORIES = [

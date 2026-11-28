@@ -1,0 +1,99 @@
+% ==========================================
+% 4. Methodology
+% ==========================================
+%
+% Status: mixed. The common part (4.1) is written together, early. Each
+% experiment subsection (4.2 onwards) is written by its owner while the
+% experiment is run, from experiments/experiment_XXX/methodology.md.
+%
+% Principle: the report presents the methodology precisely enough for another
+% team to reproduce each experiment. Raw procedures stay in experiments/;
+% the report keeps what is needed to understand and reproduce the results.
+% Results and interpretations do not belong here (see Sections~\ref{sec:results}
+% and~\ref{sec:discussion}).
+
+\section{Methodology}
+\label{sec:methodology}
+
+% ------------------------------------------
+% Short framing paragraph
+% ------------------------------------------
+% TODO [NOW]: We announce the structure: first the common experimental framework,
+%             then one subsection per experiment, all following the same template.
+
+\subsection{Common Experimental Framework}
+\label{sec:method-common}
+
+\subsubsection{Experimental Environment}
+\label{sec:method-environment}
+% TODO [NOW]: We describe the hardware (CPU, GPU, memory) and the software
+%             environment (operating system, compilers, libraries) with exact
+%             versions.
+% TODO [DURING]: We state any difference of environment between experiments.
+
+\subsubsection{Data and Materials}
+\label{sec:method-data}
+% TODO [DURING]: We describe every dataset, model or input used: origin, license,
+%                size, main characteristics and any preprocessing.
+% TODO [DURING]: We justify why this material is representative of the problem.
+
+\subsubsection{Baselines and Reference Methods}
+\label{sec:method-baselines}
+% TODO [NOW]: We list the baselines against which results are compared and
+%             justify the choice (with references to Section~\ref{sec:state-of-the-art}).
+
+\subsubsection{Measurement Protocol}
+\label{sec:method-protocol}
+% TODO [NOW]: We apply the metrics defined in Section~\ref{sec:evaluation-criteria}
+%             and state how each one is measured (tool, instrumentation).
+% TODO [NOW]: We state the repetition policy: number of runs, warm-up, random
+%             seeds, and how outliers are handled.
+% TODO [NOW]: We state how results are aggregated and how variability is reported.
+
+\subsubsection{Reproducibility}
+\label{sec:method-reproducibility}
+% TODO [DURING]: We state where code, data and scripts are located in the
+%                repository, and which commit or tag produced the reported results.
+% TODO [DURING]: We state how to rerun each experiment (commands, parameters,
+%                expected duration).
+
+% ------------------------------------------
+% Experiments (same template for each)
+% ------------------------------------------
+% TODO [NOW]: We adjust the number of experiment subsections to the real number
+%             of experiments, and give each one its id and title.
+% Template of each experiment subsection:
+%   1. Objective and research question(s) addressed (RQ ids, hypothesis ids).
+%   2. Experimental setup: inputs, parameters, tools; differences from the
+%      common framework, if any.
+%   3. Variables: independent (what we vary), dependent (what we measure),
+%      controlled (what we keep fixed).
+%   4. Procedure: the steps, in an order that allows reproduction.
+%   5. Outputs: produced files and their location in experiments/experiment_XXX/.
+%   6. Known limitations of the protocol (the interpretation is left to
+%      Section~\ref{sec:discussion}).
+
+\subsection{EXP-001: [title]}
+\label{sec:method-exp001}
+% TODO [DURING]: We write this subsection following the template above. (Owner: ...)
+
+\subsection{EXP-002: [title]}
+\label{sec:method-exp002}
+% TODO [DURING]: We write this subsection following the template above. (Owner: ...)
+
+\subsection{EXP-003: [title]}
+\label{sec:method-exp003}
+% TODO [DURING]: We write this subsection following the template above. (Owner: ...)
+
+\subsection{EXP-004: [title]}
+\label{sec:method-exp004}
+% TODO [DURING]: We write this subsection following the template above. (Owner: ...)
+
+\subsection{EXP-005: [title]}
+\label{sec:method-exp005}
+% TODO [DURING]: We write this subsection following the template above. (Owner: ...)
+
+% TODO [CHECK]: The methodology is written in the same tense and voice for all
+%               experiments, and every shared term matches Section~\ref{sec:notation}.
+% TODO [CHECK]: Each experiment can be reproduced from this section and from its
+%               directory in experiments/.

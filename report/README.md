@@ -16,13 +16,14 @@ report/
 ├── README.md
 │
 ├── sections/
-│   ├── introduction.tex
-│   ├── problem_definition.tex
-│   ├── state_of_the_art.tex
-│   ├── methodology.tex
-│   ├── results.tex
-│   ├── discussion.tex
-│   └── conclusion.tex
+│   ├── 0_abstract.tex
+│   ├── 1_introduction.tex
+│   ├── 2_problem_definition.tex
+│   ├── 3_state_of_the_art.tex
+│   ├── 4_methodology.tex
+│   ├── 5_results.tex
+│   ├── 6_discussion.tex
+│   └── 7_conclusion.tex
 │
 ├── figures/
 │   ├── diagrams/
@@ -61,13 +62,14 @@ Each section should focus on a specific aspect of the research.
 
 | File | Purpose |
 |---|---|
-| `introduction.tex` | Introduce the research context, objectives and contributions. |
-| `problem_definition.tex` | Define the problem and its technical and scientific challenges. |
-| `state_of_the_art.tex` | Present existing approaches, scientific publications and related work. |
-| `methodology.tex` | Explain the research methodology and experimental protocols. |
-| `results.tex` | Present experimental measurements, tables and figures. |
-| `discussion.tex` | Interpret results, compare findings and discuss limitations. |
-| `conclusion.tex` | Summarize the research contributions and future work. |
+| `0_abstract.tex` | Provide a concise summary of the research. |
+| `1_introduction.tex` | Introduce the research context, objectives and contributions. |
+| `2_problem_definition.tex` | Define the problem and its technical and scientific challenges. |
+| `3_state_of_the_art.tex` | Present existing approaches, scientific publications and related work. |
+| `4_methodology.tex` | Explain the research methodology and experimental protocols. |
+| `5_results.tex` | Present experimental measurements, tables and figures. |
+| `6_discussion.tex` | Interpret results, compare findings and discuss limitations. |
+| `7_conclusion.tex` | Summarize the research contributions and future work. |
 
 Additional sections can be created when necessary.
 
